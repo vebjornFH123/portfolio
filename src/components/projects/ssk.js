@@ -12,7 +12,7 @@ import jsLogo from "../../img/logos/js.png";
 export default function Ssk() {
 	const goToPage = () => {
 		return () => {
-			window.location.href = "https://songstarterkits.com"; // Redirect to the specified link
+			window.open("https://songstarterkits.com"); // Redirect to the specified link
 		};
 	};
 	const programs = [

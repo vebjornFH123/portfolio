@@ -81,6 +81,7 @@ export default function Skills() {
 						{skills.map((skill, index) => (
 							<a
 								href={skill.link}
+								target="_blank"
 								key={index}
 								style={{animationDelay: `${0.05 * (index + 1)}s`}}
 								className={`${

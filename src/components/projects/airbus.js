@@ -17,7 +17,7 @@ export default function Airbus() {
 
 	const goToPage = () => {
 		return () => {
-			window.location.href = "https://www.atsportal.no/index.html"; // Redirect to the specified link
+			window.open("https://www.atsportal.no/index.html"); // Redirect to the specified link
 		};
 	};
 

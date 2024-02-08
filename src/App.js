@@ -9,7 +9,8 @@ import Work from "./components/work.js";
 import Experience from "./components/experience";
 import Education from "./components/education";
 import Contact from "./components/contact";
-import PhoneStart from "./components/phoneStart";
+
+import Links from "./components/links.jsx";
 
 import ThreeScene from "./threeScene";
 
@@ -17,6 +18,7 @@ export default function App() {
 	return (
 		<div className=" w-screen overflow-x-hidden">
 			<Menubar />
+			<Links />
 			{/* The pages below */}
 			<div id="home">
 				<ThreeScene />

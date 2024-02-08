@@ -21,7 +21,7 @@ export default function Nyeveier() {
 
 	const goToPage = () => {
 		return () => {
-			window.location.href = "https://nyeveier.no"; // Redirect to the specified link
+			window.open("https://nyeveier.no"); // Redirect to the specified link
 		};
 	};
 

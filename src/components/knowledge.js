@@ -65,6 +65,7 @@ export default function Knowledge() {
 						<a
 							href={program.link}
 							key={index}
+							target="_blank"
 							className={`${
 								programVisible ? "scale-up" : ""
 							} scale-0 relative h-24 w-24 bg-sky-950 bg-opacity-50 flex flex-col gap-3 rounded-xl cursor-pointer transition-all duration-200 hover:bg-cyan-900`}

@@ -19,7 +19,7 @@ export default function Courseguide() {
 
 	const goToPage = () => {
 		return () => {
-			window.location.href = "https://eivind.woien.com/golf"; // Redirect to the specified link
+			window.open("https://eivind.woien.com/golf"); // Redirect to the specified link
 		};
 	};
 

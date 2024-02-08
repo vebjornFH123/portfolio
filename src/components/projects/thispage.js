@@ -18,7 +18,7 @@ export default function ThisPage() {
 
 	const goToPage = () => {
 		return () => {
-			window.location.href = "https://eivind.woien.com"; // Redirect to the specified link
+			window.open("https://eivind.woien.com"); // Redirect to the specified link
 		};
 	};
 

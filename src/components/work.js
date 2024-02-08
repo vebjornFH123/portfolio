@@ -13,8 +13,8 @@ import {act} from "react-dom/test-utils";
 export default function Work() {
 	const projects = [
 		{type: "logo", ico: nyeVeierLogo, name: "", id: "nyeveier", color: "#005f6e"},
-		{type: "logo", ico: sskLogo, name: "", id: "ssk", color: "#b35600"},
 		{type: "logo", ico: atsLogo, name: "", id: "airbus", color: "#0280ad"},
+		{type: "logo", ico: sskLogo, name: "", id: "ssk", color: "#b35600"},
 		{type: "txt", ico: "3D Golfcourse Map", name: "", id: "golf", color: "#00cf48"},
 		{type: "txt", ico: "This Page", name: "", id: "page", color: "#0280ad"},
 	];
@@ -95,15 +95,16 @@ export default function Work() {
 					<div style={{display: activeProject === "nyeveier" ? "block" : "none"}}>
 						<Nyeveier />
 					</div>
+					<div style={{display: activeProject === "airbus" ? "block" : "none"}}>
+						<Airbus />
+					</div>
 					<div style={{display: activeProject === "ssk" ? "block" : "none"}}>
 						<Ssk />
 					</div>
 					<div style={{display: activeProject === "golf" ? "block" : "none"}}>
 						<Courseguide />
 					</div>
-					<div style={{display: activeProject === "airbus" ? "block" : "none"}}>
-						<Airbus />
-					</div>
+
 					<div style={{display: activeProject === "page" ? "block" : "none"}}>
 						<ThisPage />
 					</div>

@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+import Menubar from "./components/navbar.js";
+import About from "./components/about.js";
+import Skills from "./components/skills";
+import Knowledge from "./components/knowledge.js";
+import Work from "./components/work.js";
+import Experience from "./components/experience";
+import Education from "./components/education";
+import Contact from "./components/contact";
+import PhoneStart from "./components/phoneStart";
+
+import ThreeScene from "./threeScene";
+
+export default function App() {
+	return (
+		<div className=" w-screen overflow-x-hidden">
+			<Menubar />
+			{/* The pages below */}
+			<div id="home">
+				<ThreeScene />
+			</div>
+			<div id="about">
+				<About />
+			</div>
+			<div id="skills">
+				<Skills />
+			</div>
+			<Knowledge />
+			<div id="work">
+				<Work />
+			</div>
+			<div id="experience">
+				<Experience />
+			</div>
+			<div id="education">
+				<Education />
+			</div>
+			<div id="contact">
+				<Contact />
+			</div>
+		</div>
+	);
 }
-
-export default App;

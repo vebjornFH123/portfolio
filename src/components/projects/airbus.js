@@ -12,7 +12,7 @@ export default function Airbus() {
 		{link: "", name: "Unity", image: unityLogo},
 		{link: "", name: "C#", image: csharpLogo},
 		{link: "", name: "Blender", image: blenderLogo},
-		{link: "https://www.adobe.com/no/products/photoshop.html", name: "Photoshop", image: photoshopLogo},
+		{link: "", name: "Photoshop", image: photoshopLogo},
 	];
 
 	const goToPage = () => {
@@ -32,9 +32,8 @@ export default function Airbus() {
 				<h2 className="text-white text-center text-4xl">Airbus VR Trening</h2>
 				<img className=" w-auto max-h-[30vh] h-res-1 m-auto object-contain sm:-mt-4 -mt-10" src={airplaneImg} />
 				<p className="text-white lg:text-xl lg:font-light font-medium text-md sm:mt-0 -mt-10">
-					As a part time consultant at Applica Training Systems, I contributed to developing a VR app for Airbus flight procedure training. The app
-					offers pilots realistic, hands-on training in an interactive VR environment. Utilizing finger tracking, pilots can manipulate cockpit levers
-					and buttons effortlessly with just their hands.
+					At Applica Training Systems, I contribute to developing a VR app for pilot training. I started here as an Intern, and are now hired as a
+					part time consultant.
 				</p>
 				<h3 className="text-neutral-500 text-center text-xl mt-5">Tools</h3>
 

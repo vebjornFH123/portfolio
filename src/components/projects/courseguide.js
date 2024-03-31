@@ -30,12 +30,12 @@ export default function Courseguide() {
 		<div ref={cont} className={` h-auto pt-10 pb-12 flex flex-col items-center`}>
 			<div
 				onClick={goToPage()}
-				className="m-auto max-w-[920px] w-[75vw] min-h-[70vh] p-10 border-2  border-[#67d466]  rounded-3xl bg-opacity-25 hover:brightness-110 transition-all duration-300 cursor-pointer">
+				className="m-auto max-w-[920px] w-[75vw] min-h-[70vh] p-10 border-2  border-[#67d466]  rounded-3xl bg-opacity-25 hover:bg-neutral-800 transition-all duration-300 cursor-pointer">
 				<h2 className="text-white text-center text-4xl">3D Golf Course Guide</h2>
 				<img className=" w-auto max-h-[30vh] h-res-1 m-auto object-contain sm:-mt-4 -mt-10" src={courseguideMockup} />
-				<p className="text-white lg:text-xl lg:font-light font-medium text-md sm:mt-0 -mt-10">
-					Strategize your golf with my low-poly 3D course demo. The unique style offers a fun, relaxed experience for all skill levels, aiding in game
-					improvement. Discover golf in a new way through our stylized 3D world.
+				<p className="text-white lg:text-xl lg:font-light text-center md:text-left font-light text-sm leading-4 sm:mt-0 mt-4 ">
+					Explore my personal project: a miniature, low-poly 3D map of a real-world golf course (only 1 hole available at the moment), crafted by me.
+					This unique map offers a simple yet effective way to strategise your next golf round.
 				</p>
 				<h3 className="text-neutral-500 text-center text-xl mt-5">Tools</h3>
 

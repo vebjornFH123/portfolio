@@ -5,10 +5,10 @@ import chatgptLogo from "../img/logos/chatgpt.png";
 import csharpLogo from "../img/logos/csharp.png";
 import html5Logo from "../img/logos/html5.png";
 import howlerLogo from "../img/logos/howlerjs.png";
-import phpLogo from "../img/logos/php.png";
+import dndKitLogo from "../img/logos/dnd-kit.png";
 import vscodeLogo from "../img/logos/vscode.png";
 import visualstudioLogo from "../img/logos/visualstudio.png";
-import unityLogo from "../img/logos/unity.png";
+
 import illustratorLogo from "../img/logos/illustrator.png";
 import cssLogo from "../img/logos/css.png";
 import premierProLogo from "../img/logos/premierepro.png";
@@ -23,6 +23,7 @@ import fireflyLogo from "../img/logos/firefly.png";
 import figmaLogo from "../img/logos/figma.png";
 import mapboxLogo from "../img/logos/Mapbox.png";
 import threejsLogo from "../img/logos/threejs.png";
+import postgresqlLogo from "../img/logos/postgresql.png";
 
 export default function Knowledge() {
 	const programs = [
@@ -30,13 +31,14 @@ export default function Knowledge() {
 		{link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5", name: "HTML5", image: html5Logo},
 		{link: "https://developer.mozilla.org/en-US/docs/Web/CSS", name: "CSS3", image: cssLogo},
 		{link: "https://howlerjs.com/", name: "Howler.js", image: howlerLogo},
+		{link: "https://www.postgresql.org/", name: "PostgreSQL", image: postgresqlLogo},
 		{link: "https://www.mapbox.com", name: "Mapbox GL", image: mapboxLogo},
 		{link: "https://threejs.org/", name: "Three.js", image: threejsLogo},
 		{link: "https://figma.com", name: "Figma", image: figmaLogo},
+		{link: "https://dndkit.com/", name: "Dnd-Kit", image: dndKitLogo},
 		{link: "https://code.visualstudio.com/", name: "VSCode", image: vscodeLogo},
 		{link: "https://visualstudio.microsoft.com/", name: "Visual Studio", image: visualstudioLogo},
 
-		{link: "https://unity.com/", name: "Unity", image: unityLogo},
 		{link: "https://www.blender.org/", name: "Blender", image: blenderLogo},
 		{link: "https://www.adobe.com/products/illustrator.html", name: "Illustrator", image: illustratorLogo},
 		{link: "https://www.adobe.com/no/products/photoshop.html", name: "Photoshop", image: photoshopLogo},
@@ -58,7 +60,7 @@ export default function Knowledge() {
 				}}></div>
 			<div className=" flex flex-col items-center lg:gap-7">
 				<h2 className="text-white text-4xl text-center relative">Not convinced yet?</h2>
-				<h2 className="text-white text-xl text-center relative">I am proficient in this as well</h2>
+				<h2 className="text-white text-xl text-center relative">I have experience in this as well</h2>
 				<div className="h-1"></div>
 				<div ref={program} className="relative flex flex-wrap w-screen lg:max-w-3xl m-auto gap-3 scale-75 justify-center xl:scale-100">
 					{programs.map((program, index) => (

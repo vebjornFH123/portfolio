@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Contact() {
 	return (
-		<div className=" h-quarter-screen lg:h-screen flex justify-center items-center relative">
+		<div className="">
 			<div
-				className="hidden md:block top-52 right-0 absolute h-2/3 w-2/3 opacity-10 z-50 pointer-events-none"
+				className="hidden md:block h-2/3 w-2/3 opacity-10 z-50 pointer-events-none"
 				style={{
 					background: "radial-gradient(circle, rgba(0,255,255,1) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%)",
 					filter: `hue-rotate(30deg) brightness(0.8)`,
 				}}></div>
-			<div className=" lg:scale-100 scale-75 max-w-2xl  pt-10 lg:mt-0 -mt-44 ml-auto mr-auto text-neutral-300 text-xl text-center">
+			<div className=" max-w-2xl lg:mt-0 ml-auto mr-auto text-neutral-300 text-xl text-center pt-[20vh] pb-[30vh]">
 				<h2 className=" text-white text-4xl text-center pb-7">Did you really get this far?</h2>
 				<p>
 					Thank you som much for visiting my portifolio! Feel free to contact me at anytime. I'm always ready for a good conversation about potential
@@ -18,9 +18,9 @@ export default function Contact() {
 					<br />
 				</p>
 				<p className=" w-max m-auto">
-					Email: woieneivind@gmail.com
+					Email: eivind@woien.com
 					<br />
-					Tlf: 45 88 88 24
+					Tlf: +47 45 88 88 24
 					<br />
 					or
 					<a className=" underline text-sky-300 hover:text-sky-100 ml-2" href="https://www.linkedin.com/in/eivind-w%C3%B8ien-8bb22a151/">

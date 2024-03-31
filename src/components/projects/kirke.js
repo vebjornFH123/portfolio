@@ -1,22 +1,17 @@
 import {useInView} from "react-intersection-observer";
 
-import estructionsMockup from "../../img/mockups/nyeveier-mockup-blur.png";
+import mockUp from "../../img/mockups/sjomannskirken-mockup.png";
 
-import threejsLogo from "../../img/logos/threejs.png";
-import figmaLogo from "../../img/logos/figma.png";
+import dndKitLogo from "../../img/logos/dnd-kit.png";
 import tailwindLogo from "../../img/logos/tailwind.png";
 import reactLogo from "../../img/logos/react.png";
-import nyeVeierLogo from "../../img/mockups/logo-color.png";
-import mapboxLogo from "../../img/logos/Mapbox.png";
-import typesScriptLogo from "../../img/logos/Typescript.png";
+import logo from "../../img/mockups/sjomannskirken_full.png";
 
-export default function Nyeveier() {
+export default function Kirke() {
 	const programs = [
 		{link: "", name: "Rreact.js", image: reactLogo},
-		{link: "", name: "TypeScript", image: typesScriptLogo},
-		{link: "", name: "Three.js", image: threejsLogo},
+		{link: "", name: "dnd-Kit", image: dndKitLogo},
 		{link: "", name: "Tailwind", image: tailwindLogo},
-		{link: "", name: "Mapbox", image: mapboxLogo},
 	];
 
 	const goToPage = () => {
@@ -32,14 +27,13 @@ export default function Nyeveier() {
 		<div ref={cont} className={` h-auto pt-10 pb-12 flex flex-col items-center `}>
 			<div
 				onClick={goToPage()}
-				className=" max-w-[920px] w-[75vw] min-h-[70vh] p-10 rounded-3xl border-2  border-[#00969D] transition-all duration-300 cursor-pointer hover:bg-neutral-800">
-				<img className=" w-auto m-auto max-h-[50px]" src={nyeVeierLogo} />
+				className=" max-w-[920px] w-[75vw] min-h-[70vh] p-10 rounded-3xl border-2  border-[#f15c55] transition-all duration-300 cursor-pointer hover:bg-neutral-800">
+				<img className=" w-auto m-auto max-h-[50px]" src={logo} />
 
-				<img className=" m-auto max-h-[30vh] object-contain sm:-mt-4 mt-0 " src={estructionsMockup} />
+				<img className=" m-auto max-h-[30vh] object-contain sm:-mt-4 mt-0 " src={mockUp} />
 				<p className="text-white lg:text-xl lg:font-light text-center md:text-left font-light text-sm leading-4 sm:mt-0 mt-4 ">
-					My two classmates and I are currently engaged in creating our bachelor's degree thesis at Nye Veier. Our focus is on the creation of a
-					modern visual system tailored to the organization's requirements. The system incorporates navigational 360-degree photos, images, maps, and
-					incorporates 3D visualization elements.
+					My classmate and I undertook a paid project were we developed two simple games to be part of a teaching exercise. With a tight deadline from
+					the client, we delivered beyond expectations within a short timeframe.
 				</p>
 				<h3 className="text-neutral-500 text-center text-xl mt-5">Tools</h3>
 

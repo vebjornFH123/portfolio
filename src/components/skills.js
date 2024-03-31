@@ -13,6 +13,8 @@ import cssLogo from "../img/logos/css.png";
 import html5Logo from "../img/logos/html5.png";
 import gitLogo from "../img/logos/git.png";
 
+import unityLogo from "../img/logos/unity.png";
+
 export default function Skills() {
 	const skills = [
 		{link: "https://react.dev/", name: "React", image: reactLogo},
@@ -21,6 +23,8 @@ export default function Skills() {
 		{link: "https://nodejs.org/en", name: "Node.js", image: nodeLogo},
 		{link: "https://tailwindcss.com/", name: "Tailwind", image: tailwindLogo},
 		{link: "https://git-scm.com/", name: "Git", image: gitLogo},
+
+		{link: "https://unity.com/", name: "Unity", image: unityLogo},
 	];
 
 	const {ref: program, inView: programVisible} = useInView();
@@ -62,8 +66,13 @@ export default function Skills() {
 							<span>Backend</span>
 						</div>
 
-						<div className="h-0.5 lg:w-80 w-56 bg-white -mt-7">
-							<img ref={faceRef} className={`${faceVisible ? "basic-slide" : ""} absolute h-20 ml-32 lg:ml-48 -mt-10 grayscale `} src={face} />
+						<div className="h-0.5 lg:w-80 w-56 bg-white -mt-7 pointer-events-none">
+							<img
+								ref={faceRef}
+								className={`${faceVisible ? "basic-slide" : ""} absolute h-20 ml-32 lg:ml-48 -mt-10 grayscale `}
+								src={face}
+								alt="Eivind Wøien's face"
+							/>
 							<div className="absolute h-3 w-0.5 bg-white translate-x-1/2 left-1/2 -mt-1 -z-10"></div>
 						</div>
 

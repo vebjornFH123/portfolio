@@ -1,6 +1,7 @@
 import {useInView} from "react-intersection-observer";
 
 import airplaneImg from "../../img/mockups/vr.png";
+import atsLogo from "../../img/mockups/ATS.png";
 
 import blenderLogo from "../../img/logos/blender.png";
 import unityLogo from "../../img/logos/unity-black.png";
@@ -28,10 +29,10 @@ export default function Airbus() {
 		<div ref={cont} className={` h-auto pt-10 pb-12 flex flex-col items-center`}>
 			<div
 				onClick={goToPage()}
-				className="m-auto max-w-[920px] w-[75vw] min-h-[70vh] p-10 rounded-3xl  border-2  border-sky-400 hover:brightness-110 transition-all duration-300 cursor-pointer">
-				<h2 className="text-white text-center text-4xl">Airbus VR Trening</h2>
+				className="m-auto max-w-[920px] w-[75vw] min-h-[70vh] p-10 rounded-3xl  border-2  border-sky-400 hover:bg-neutral-800 transition-all duration-300 cursor-pointer">
+				<img className=" w-auto m-auto max-h-[50px]" src={atsLogo} />
 				<img className=" w-auto max-h-[30vh] h-res-1 m-auto object-contain sm:-mt-4 -mt-10" src={airplaneImg} />
-				<p className="text-white lg:text-xl lg:font-light font-medium text-md sm:mt-0 -mt-10">
+				<p className="text-white lg:text-xl lg:font-light text-center md:text-left font-light text-sm leading-4 sm:mt-0 mt-4 ">
 					At Applica Training Systems, I contribute to developing a VR app for pilot training. I started here as an Intern, and are now hired as a
 					part time consultant.
 				</p>

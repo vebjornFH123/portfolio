@@ -16,7 +16,7 @@ export default function Kirke() {
 
 	const goToPage = () => {
 		return () => {
-			window.open("https://nyeveier.no"); // Redirect to the specified link
+			window.open("https://www.sjomannskirken.no/"); // Redirect to the specified link
 		};
 	};
 

@@ -153,6 +153,7 @@ function ThreeScene() {
 					style={{
 						opacity: 1,
 						transition: "opacity 0.5s",
+						animationTimingFunction: "ease-in-out",
 					}}
 					ref={loadingRef}
 					className="flex flex-wrap h-full justify-center items-center ">

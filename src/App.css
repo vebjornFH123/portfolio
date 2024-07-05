@@ -1,21 +1,214 @@
 html {
-	font-family: "Barlow", sans-serif;
-	font-weight: 200;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
 }
 
 @keyframes scroll {
-	0% {
-		transform: translateY(0);
-	}
-	100% {
-		transform: translateY(-100%);
-	}
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 .arrow-down {
-	width: 0;
-	height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 20px solid rgb(186, 230, 253);
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #138425;
+}
+
+.gradient-text-orange {
+  font-weight: bold;
+  height: 70px;
+  background: linear-gradient(45deg, #ff7300, #ffd044);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-svelte-red {
+  font-weight: bold;
+  height: 70px;
+  background: linear-gradient(45deg, #ffffff, #f62000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-green {
+  font-weight: bold;
+  height: 70px;
+  background: linear-gradient(45deg, #138425, #52f337);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-blue {
+  height: 70px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #013a4e, #00a3dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-purple {
+  height: 70px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #832c90, #e90676);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-yellow {
+  height: 70px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #bdaa00, #ffe500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-red {
+  height: 70px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ad3333, #ff3d00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+ul {
+  --col-gap: 2rem;
+  --row-gap: 2rem;
+  --line-w: 0.25rem;
+  display: grid;
+  grid-template-columns: var(--line-w) 1fr;
+  grid-auto-columns: max-content;
+  column-gap: var(--col-gap);
+  list-style: none;
+  width: min(48rem, 90%);
+  margin-inline: auto;
+}
+
+/* line */
+ul::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  border-radius: calc(var(--line-w) / 2);
+  width: 2px; /* Set this to the desired thickness */
+}
+
+.yellow-gradient::before {
+  background: linear-gradient(to right, #bdaa00, #ffe500);
+}
+
+.red-gradient::before {
+  background: linear-gradient(to right, #ad3333, #ff3d00);
+}
+
+/* row gaps */
+ul li:not(:last-child) {
+  margin-bottom: var(--row-gap);
+}
+
+/* card */
+ul li {
+  grid-column: 2;
+  --inlineP: 1.5rem;
+  margin-inline: var(--inlineP);
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+/* Aligning items as requested */
+ul li:nth-child(1) {
+  justify-self: end; /* Aligns first item to end of its column */
+}
+ul li:nth-child(2) {
+  justify-self: start; /* Aligns second item to start of its column */
+}
+
+/* date */
+ul li .title {
+  --dateH: 3rem;
+  height: var(--dateH);
+  margin-inline: calc(var(--inlineP) * -1);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* circle */
+ul li .title::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  aspect-ratio: 1;
+  background: var(--bgColor);
+  border: 0.3rem solid var(--accent-color);
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+}
+
+ul li .title.red-gradient::after {
+  background: linear-gradient(to right, #ad3333, #ff3d00);
+}
+
+ul li .title.yellow-gradient::after {
+  background: linear-gradient(to right, #bdaa00, #ffe500);
+}
+
+@media (min-width: 40rem) {
+  ul {
+    grid-template-columns: 1fr var(--line-w) 1fr;
+  }
+  ul::before {
+    grid-column: 2;
+  }
+  ul li:nth-child(odd) {
+    grid-column: 1;
+  }
+  ul li:nth-child(even) {
+    grid-column: 3;
+  }
+
+  /* start second card */
+  ul li:nth-child(2) {
+    grid-row: 2/4;
+  }
+
+  ul li:nth-child(odd) .title::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 0;
+  }
+
+  ul li:nth-child(odd) .title::after {
+    transform: translate(-50%, -50%);
+    left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  }
+  ul li:nth-child(odd) .title {
+    border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+  }
+}
+
+.credits {
+  margin-top: 1rem;
+  text-align: right;
+}
+.credits a {
+  color: var(--color);
 }

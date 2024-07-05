@@ -21,8 +21,8 @@ export default function Education() {
       title: "General Studies",
       year: "(2015 - 2018)",
       subtitle: "With a specialization in IT",
-      content: `My passion for programming and technology began early when I built and programmed LEGO NXT robots as a child. Later, I explored
-		block-based coding through Scratch. However, it was in high school that my passion for IT subjects truly flourished.`,
+      content:
+        "During my general studies, I focused on gaining foundational knowledge in web development, specifically in HTML, CSS, and JavaScript. I began with HTML, learning how to structure web pages using various tags and elements. This allowed me to create the basic framework of a website.",
     },
   ];
 

@@ -3,6 +3,14 @@ import educationSeparator from "../img/pageSeparators/education.svg";
 export default function Education() {
   const data = [
     {
+      title: "Master at UiA",
+      year: "(2024 - 2026)",
+      subtitle: "Multimedia and Game Technologies",
+      content: `In my master's program, I have been working with game development in Unity as well as UX/UI design. 
+            This has given me hands-on experience with creating interactive solutions that combine technical 
+            implementation with user-centered design principles.`,
+    },
+    {
       title: "Bachelor at UiA",
       year: "(2021 - 2024)",
       subtitle: "Multimedia technology and design",

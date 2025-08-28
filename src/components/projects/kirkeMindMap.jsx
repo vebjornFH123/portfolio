@@ -32,6 +32,7 @@ export default function KirkeMindMap() {
         onClick={goToPage()}
         className=" max-w-[920px] w-[75vw]  lg:min-w-[52vw]  min-h-[65vh] p-8 rounded-3xl transition-all duration-300 cursor-pointer hover:bg-neutral-800">
         <img className=" w-auto m-auto max-h-[50px] pb-2" src={logo} />
+        <div className="h-2"></div>
 
         <img className=" m-auto max-h-[30vh] object-contain sm:-mt-4 mt-0 " src={mockUp} />
         <p className="text-white lg:text-xl lg:font-light text-center md:text-left font-light text-sm leading-4 sm:mt-0 mt-4 ">

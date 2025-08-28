@@ -105,7 +105,7 @@ export default function Menubar() {
 
   return (
     <div className="left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:top-1/2 lg:-translate-y-1/2 bottom-8 lg:right-8 z-50 lg:w-max h-20 lg:h-fit flex flex-row lg:flex-col fixed first-letter:z-50 text-white items-center shadow-sm shadow-[#6d6d6d] bg-[#00000020] bg-opacity-50 rounded-full backdrop-blur-md sm:tracking-wider scale-75 lg:scale-100">
-      <div className={`flex flex-row p-8 lg:flex-col sm:pl-4 sm:pr-4 justify-center items-center ${width < 1080 ? "w-full" : "w-20"}`}>
+      <div className={`flex flex-row p-2 lg:flex-col sm:pl-2 sm:pr-2 justify-center items-center ${width < 1080 ? "w-full" : "w-20"}`}>
         {links.map((link, index) => (
           <>
             <div

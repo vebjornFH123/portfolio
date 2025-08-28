@@ -40,6 +40,7 @@ export default function Kronoswatches() {
           <img className="max-h-[50px]" src={logo} />
           Kronøs
         </span>
+        <div className="h-2"></div>
 
         <img className=" m-auto max-h-[28vh] object-contain sm:-mt-4 mt-0 " src={mockUp} />
         <p className="text-white lg:text-xl lg:font-light text-center md:text-left font-light text-sm leading-4 sm:mt-0 mt-4 ">

@@ -34,7 +34,7 @@ export default function Nyeveier() {
         onClick={goToPage()}
         className=" max-w-[920px] cursor-default lg:min-w-[52vw] w-[75vw] min-h-[65vh] p-8 rounded-3xl  transition-all duration-300 cursor-pointer hover:bg-neutral-800">
         <img className=" w-auto m-auto max-h-[50px] pb-2" src={nyeVeierLogo} />
-
+        <div className="h-2"></div>
         <img className=" m-auto max-h-[30vh] object-contain pt-2 sm:-mt-4 mt-0" src={estructionsMockup} />
         <div className="flex justify-center items-center w-full">
           <p className="text-white lg:text-xl lg:font-light md:text-left font-light text-sm leading-4 sm:mt-0 mt-4">
@@ -52,7 +52,7 @@ export default function Nyeveier() {
               style={{ animationDelay: `${0.05 * (index + 1)}s` }}
               className={`${
                 programVisible ? "slide-in" : ""
-              } opacity-0 relative h-14 w-14 md:h-24 md:w-24 p-2 md:rounded-3xl rounded-lg  flex flex-col gap-2 justify-center transition-all duration-200 bg-neutral-700 bg-opacity-25`}>
+              } opacity-0 relative h-14 w-14 md:h-24 md:w-24 p-2 md:rounded-3xl rounded-lg   flex flex-col gap-2 justify-center transition-all duration-200 bg-neutral-700 bg-opacity-25`}>
               <img className=" object-scale-down h-6 sm:h-12 hover:grayscale-0" src={program.image} alt={program.name} />
               <h4 className="text-center text-neutral-200 font-medium text-xss md:text-sm -mt-2 ">{program.name}</h4>
             </div>

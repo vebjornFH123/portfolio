@@ -8,6 +8,8 @@ import meImg from "../img/vebjorn-Web.jpeg";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
+import pdf from "../img/CV.pdf";
+
 export default function Home() {
   const { ref: program, inView: programVisible } = useInView();
   const { ref: faceRef, inView: faceVisible } = useInView();
@@ -41,15 +43,15 @@ export default function Home() {
                 Contact me
               </Link>
 
-              <button
-                className="text-2xl text-white font-light text-center bg-black pl-8 pr-8 h-16 border-[red] border-2 rounded-xl"
-                onClick={() => {
-                  window.open("./img/CV.pdf", "_blank");
-                }}>
-                Download CV
-              </button>
               <a
-                href="https://www.linkedin.com/in/vebj%C3%B8rn-haugholt/"
+                href={pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl text-white font-light text-center bg-black pl-8 pr-8 h-16 border-[red] border-2 rounded-xl flex justify-center items-center no-underline">
+                Download CV
+              </a>
+              <a
+                href="https://no.linkedin.com/in/vebj%C3%B8rn-haugholt"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-16 w-16 flex  justify-center items-center bg-white rounded-xl">

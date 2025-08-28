@@ -5,6 +5,13 @@ import experienceSeparator from "../img/pageSeparators/experience.svg";
 export default function Experience() {
   const data = [
     {
+      title: "Developer at Nye Veier",
+      year: "(2024 - Present)",
+      subtitle: "Full Stack Developer (Part-time)",
+      content:
+        "What started as a summer job has transitioned into an ongoing part-time role at Nye Veier. In my position, I have worked on a wide range of tasks — from creating automated views with Playwright, to data retrieval, and developing new IT solutions.",
+    },
+    {
       title: "Summer Job at Nye Veier",
       year: "(2024 - 2024)",
       subtitle: "Full Stack Developer",
